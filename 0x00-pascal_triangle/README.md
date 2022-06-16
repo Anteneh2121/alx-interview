@@ -1,4 +1,4 @@
-![](Top.png)
+![](pascal_triangle.PNG)
 
 ## Whiteboarding
 
