@@ -8,7 +8,7 @@ Pascal's Triangle
 
 **0. Pascal's Triangle**
 
-File: [0-rain.py](0-rain.py/) - [0-main.py](0-main.py/)
+File: [0-pascal_triangle.py](0-pascal_triangle.py/)
 
 Create a function def pascal_triangle(n): that returns a list of lists of integers representing the Pascal’s triangle of n:
 
