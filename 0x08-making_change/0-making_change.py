@@ -19,13 +19,6 @@ def makeChange(coins, total):
         - You can assume you have an infinite number of each denomination of
         coin in the list
     """
-    #!/usr/bin/python3
-"""Make Change method"""
-
-
-def makeChange(coins, total):
-    """Given a pile of coins of different values, determine
-    the fewest number of coins needed to meet a given amount"""
     n_coins = 0
     if total <= 0:
         return n_coins
