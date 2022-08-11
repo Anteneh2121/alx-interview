@@ -19,23 +19,22 @@ def makeChange(coins, total):
         - You can assume you have an infinite number of each denomination of
         coin in the list
     """
+    #!/usr/bin/python3
+"""Make Change method"""
+
+
+def makeChange(coins, total):
+    """Given a pile of coins of different values, determine
+    the fewest number of coins needed to meet a given amount"""
+    n_coins = 0
     if total <= 0:
-        return 0
-
-    newVal = total + 1
-    store = {0: 0}
-
-    for i in range(1, total + 1):
-        store[i] = newVal
-
-        for coin in coins:
-            current = i - coin
-            if current < 0:
-                continue
-
-            store[i] = min(store[current] + 1, store[i])
-
-    if store[total] == total + 1:
+        return n_coins
+    coins.sort(reverse=True)
+    while (total > 0 and coins):
+        n = int(total / coins[0])
+        total = total - (coins[0] * n)
+        n_coins = n_coins + n
+        coins.remove(coins[0])
+    if total != 0:
         return -1
-
-    return store[total]
+    return n_coins
